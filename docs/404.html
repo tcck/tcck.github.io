@@ -7,32 +7,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/static/favicon.png" sizes="any" type="image/png" />
-	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/static/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="/static/default.css">
 </head>
 
-<body id="_404">
+<body class="w3-theme w3-border-theme w3-hover-theme w3-large">
 
-<nav>
-<section>
-<span class="home">
-	<a href="/"><img class="navbar_logo" src="/static/logo.png" alt="Home">&nbsp;Respira</a>
+<nav class="w3-row w3-theme-dark">
+<span class="w3-col s1 w3-mobile">
+	<a class="w3-button" href="/"><img src="/static/logo.png" alt="Home">Respira</a>
 </span>
-<span class="links">
-	<a href="/contact/">Contacto</a>
-<a href="/about/">Info</a>
+<span class="w3-rest s11 w3-right w3-mobile">
+	<a class="w3-button" href="/contact/">Contacto</a>
+<a class="w3-button" href="/about/">Info</a>
 
-	<a href="/en{{ page }}" title="English">[en]</a>
+	<a class="w3-button" href="/en{{ page }}" title="English">[en]</a>
 </span>
-</section>
 </nav>
 
-<main>
-<h1>404 - Not Found</h1>
+<header class="w3-center w3-xlarge">
+	<span>{{ title }}</span>
+</header>
+
+<main class="w3-container w3-theme-l4">
+	<h1>404 - Not Found</h1>
 
 </main>
 
-<footer>
-<section>
+<footer class="w3-container w3-center w3-small">
 <p>
 	&copy; 2020
 	<a href="https://github.com/tcck/website">Contenido</a> liberado para el dominio público bajo licencia
@@ -40,10 +42,8 @@
 	<a target="_blank" rel="license"
 	href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>.
 	<br>
-	Theme from <a target="_blank" href="https://github.com/sunainapai/makesite">makesite.py</a>.
 	Built with <a target="_blank" href="https://github.com/jrmsdev/gomks">gomks</a>.
 </p>
-</section>
 </footer>
 
 </body>
